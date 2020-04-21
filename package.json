@@ -1,0 +1,41 @@
+{
+  "name": "build-time-reporter-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Webpack loader to merge twig templates that use include function",
+  "keywords": [
+    "build time",
+    "reporter",
+    "webpack",
+    "plugin"
+  ],
+  "homepage": "https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin#readme",
+  "bugs": {
+    "url": "https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin.git"
+  },
+  "license": "MIT",
+  "author": "Rafał Maciejewski (https://github.com/rafalmaciejewski)",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "release": "semantic-release"
+  },
+  "dependencies": {
+    "schema-utils": "^2.6.6"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/commit-analyzer": "^8.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@semantic-release/github": "^7.0.5",
+    "@semantic-release/npm": "^7.0.5",
+    "@semantic-release/release-notes-generator": "^9.0.1",
+    "prettier": "^2.0.4",
+    "semantic-release": "^17.0.6"
+  }
+}

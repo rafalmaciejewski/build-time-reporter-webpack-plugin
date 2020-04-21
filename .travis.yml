@@ -1,0 +1,19 @@
+sudo: false
+dist: trusty
+
+language: node_js
+node_js:
+  - 12
+
+jobs:
+  include:
+    - stage: deploy
+      deploy:
+        provider: script
+        skip_cleanup: true
+        on:
+          branch: master
+        script: npm run release
+stages:
+  - name: deploy
+    if: branch = master
