@@ -73,14 +73,14 @@ export class BuildTimeReporterWebpackPlugin {
         report.addChunks(compilation.chunks);
         report.addModules(compilation.modules);
       } else {
-        compilation.getLogger(PLUGIN_NAME).warn('trackEmit: could not find report', compilation.hash);
+        this.compiler.getInfrastructureLogger(PLUGIN_NAME).warn('trackEmit: could not find report', compilation.hash);
       }
     });
   }
 
   private sendStatsWhenDone(): void {
     this.compiler.hooks.done.tapPromise(PLUGIN_NAME, async (compilation) => {
-      const logger = compilation.getLogger(PLUGIN_NAME);
+      const logger = this.compiler.getInfrastructureLogger(PLUGIN_NAME);
       const report = this.reportsByHash.get(compilation.hash as string);
       try {
         if (report) {
