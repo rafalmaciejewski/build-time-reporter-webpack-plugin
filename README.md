@@ -23,8 +23,8 @@ const BuildTimeReporterWebpackPlugin = require('build-time-reporter-webpack-plug
 module.exports = {
   plugins: [
     new BuildTimeReporterWebpackPlugin({
-      onBuild(time) {
-        console.log(`This build took ${time}`);
+      report(stats) {
+        console.log(stats);
       },
     }),
   ],

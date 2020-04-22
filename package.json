@@ -18,12 +18,16 @@
   },
   "license": "MIT",
   "author": "Rafał Maciejewski (https://github.com/rafalmaciejewski)",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "index.js"
   ],
   "scripts": {
-    "release": "semantic-release"
+    "prepare": "npm run build",
+    "build": "tsc",
+    "release": "semantic-release",
+    "start": "tsc -w"
   },
   "dependencies": {
     "schema-utils": "^2.6.6"
@@ -35,7 +39,19 @@
     "@semantic-release/github": "^7.0.5",
     "@semantic-release/npm": "^7.0.5",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "prettier": "^2.0.4",
-    "semantic-release": "^17.0.6"
+    "@types/node": "^13.13.2",
+    "@types/webpack": "^4.41.12",
+    "@typescript-eslint/eslint-plugin": "^2.29.0",
+    "cz-conventional-changelog": "^3.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-getresponse-base": "^5.0.1",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.8.2",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.1.7",
+    "prettier": "^2.0.5",
+    "semantic-release": "^17.0.6",
+    "typescript": "^3.8.3",
+    "webpack": "^4.43.0"
   }
 }
