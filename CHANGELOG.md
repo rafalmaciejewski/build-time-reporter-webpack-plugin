@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.0.2...v1.0.3) (2020-04-22)
+
+
+### Bug Fixes
+
+* fix webpack logger usage ([114f68e](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/commit/114f68e03bbaa0b73178050d37c251de0288138d))
+
 ## [1.0.2](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.0.1...v1.0.2) (2020-04-22)
 
 
