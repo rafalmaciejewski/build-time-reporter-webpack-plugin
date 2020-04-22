@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.0.1...v1.0.2) (2020-04-22)
+
+
+### Bug Fixes
+
+* include code in published package ([9d1ca6f](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/commit/9d1ca6f62c51a71f546fa77284cb29ddff232abe))
+
 ## [1.0.1](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.0.0...v1.0.1) (2020-04-22)
 
 
