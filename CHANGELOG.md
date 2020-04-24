@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.0.3...v1.1.0) (2020-04-24)
+
+
+### Features
+
+* add support for webpack 3 ([caa9206](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/commit/caa920620b3e6b1f5c7de0ff93a686db932b05e7))
+
 ## [1.0.3](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.0.2...v1.0.3) (2020-04-22)
 
 
