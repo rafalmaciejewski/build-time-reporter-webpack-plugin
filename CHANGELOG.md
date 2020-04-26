@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.1.0...v1.2.0) (2020-04-26)
+
+
+### Features
+
+* add rebuild info to stats ([9fcb0bf](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/commit/9fcb0bf7ce6da64b4f0d580e977feb3a8dd04bf4))
+
 # [1.1.0](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.0.3...v1.1.0) (2020-04-24)
 
 
