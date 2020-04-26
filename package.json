@@ -40,7 +40,7 @@
     "@semantic-release/github": "^7.0.5",
     "@semantic-release/npm": "^7.0.5",
     "@semantic-release/release-notes-generator": "^9.0.1",
-    "@types/node": "^13.13.2",
+    "@types/node": "^13.13.4",
     "@types/webpack": "^4.41.12",
     "@typescript-eslint/eslint-plugin": "^2.29.0",
     "cz-conventional-changelog": "^3.1.0",

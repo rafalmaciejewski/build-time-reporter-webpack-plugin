@@ -15,6 +15,8 @@ const schema: JSONSchema4 = {
   additionalProperties: false,
 };
 
+let rebuild = false;
+
 export class BuildTimeReporterWebpackPlugin {
   private reportsByHash: Map<string, BuildTimeReport> = new Map();
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -102,7 +104,8 @@ export class BuildTimeReporterWebpackPlugin {
 
   private createReportAndTrackCompilation(): void {
     tapInto(this.compiler, 'compilation', (compilation) => {
-      const report = new BuildTimeReport(this.compiler.context);
+      const report = new BuildTimeReport(this.compiler.context, rebuild);
+      rebuild = true;
       report.start();
       this.setReportHash(compilation, report);
       this.trackBuild(compilation, report);

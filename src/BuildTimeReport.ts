@@ -11,7 +11,7 @@ export class BuildTimeReport {
   private hash?: string;
   private initialResource?: string;
 
-  constructor(private readonly projectRoot: string) {}
+  constructor(private readonly projectRoot: string, private readonly rebuild: boolean = false) {}
 
   public track(step: Step): void {
     const stepStats = this.steps.get(step);
@@ -71,6 +71,7 @@ export class BuildTimeReport {
       assetCount: this.assets.length,
       modulesCount: this.modules.length,
       initialResource: this.initialResource,
+      rebuild: this.rebuild,
     };
   }
 

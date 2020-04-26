@@ -21,4 +21,5 @@ export interface BuildTimeReporterStats {
   duration: number;
   steps: Record<Step, StepStats>;
   initialResource?: string;
+  rebuild: boolean;
 }
