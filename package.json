@@ -1,7 +1,7 @@
 {
   "name": "build-time-reporter-webpack-plugin",
   "version": "1.2.0",
-  "description": "Webpack loader to merge twig templates that use include function",
+  "description": "Webpack plugin for build time reporting",
   "keywords": [
     "build time",
     "reporter",
