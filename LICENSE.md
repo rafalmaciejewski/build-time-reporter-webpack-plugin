@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2020 twig-concat-loader author and contributors
+Copyright (c) 2020 build-time-reporter-webpack-plugin author and contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
