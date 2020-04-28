@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.2.0...v1.3.0) (2020-04-28)
+
+
+### Features
+
+* add nodeEnv field to report ([6dae55d](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/commit/6dae55da1cbba591c8e280d562ee7c0715d59723))
+
 # [1.2.0](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.1.0...v1.2.0) (2020-04-26)
 
 
