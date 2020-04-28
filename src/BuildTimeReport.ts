@@ -72,6 +72,7 @@ export class BuildTimeReport {
       modulesCount: this.modules.length,
       initialResource: this.initialResource,
       rebuild: this.rebuild,
+      nodeEnv: process.env.NODE_ENV as string,
     };
   }
 

@@ -22,4 +22,5 @@ export interface BuildTimeReporterStats {
   steps: Record<Step, StepStats>;
   initialResource?: string;
   rebuild: boolean;
+  nodeEnv: string;
 }
