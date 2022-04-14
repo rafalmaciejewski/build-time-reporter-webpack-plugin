@@ -2,7 +2,7 @@ import webpack from 'webpack';
 import { JSONSchema4 } from 'schema-utils/declarations/validate';
 import validateOptions from 'schema-utils';
 import { BuildTimeReport } from './BuildTimeReport';
-import { BuildTimeReporterWebpackPluginOptions } from './types';
+import { AssetStats, BuildTimeReporterWebpackPluginOptions } from './types';
 import { getLogger, tapInto, tapPromiseInto } from './utils';
 
 const schema: JSONSchema4 = {
@@ -64,11 +64,11 @@ export class BuildTimeReporterWebpackPlugin {
         report.track('emit');
       }
     });
-    tapInto(this.compiler, 'afterEmit', (compilation) => {
+    tapInto(this.compiler, 'afterEmit', (compilation: webpack.compilation.Compilation) => {
       const report = this.reportsByHash.get(compilation.hash as string);
       if (report) {
         report.track('emit');
-        report.addAssets(compilation.assets);
+        report.addAssets(compilation.getStats().toJson().assets as AssetStats[]);
         report.addChunks(compilation.chunks);
         report.addModules(compilation.modules);
       } else {

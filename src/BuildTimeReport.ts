@@ -37,16 +37,13 @@ export class BuildTimeReport {
     this.hash = hash;
   }
 
-  public addAssets(assets: Record<string, webpack.compilation.Asset & { emitted: boolean }>): void {
-    this.assets = [];
-    Object.entries(assets).forEach(([assetName, asset]) => {
-      if (asset.emitted) {
-        this.assets.push({
-          name: assetName,
-          size: asset.info.size!,
-        });
-      }
-    });
+  public addAssets(assets: Array<AssetStats & { emitted?: boolean }>): void {
+    this.assets = assets
+      .filter((asset) => asset.emitted)
+      .map((asset) => ({
+        name: asset.name,
+        size: asset.size,
+      }));
   }
 
   public addChunks(chunks: webpack.compilation.Chunk[]): void {
