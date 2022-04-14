@@ -25,7 +25,7 @@
   ],
   "scripts": {
     "build": "tsc",
-    "prepare": "npm run build",
+    "prepare": "husky install || true",
     "release": "semantic-release",
     "start": "tsc -w"
   },
