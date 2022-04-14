@@ -1,12 +1,16 @@
 export interface BuildTimeReporterWebpackPluginOptions {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  report: (stats: BuildTimeReporterStats) => Promise<any>;
+  report: (stats: BuildTimeReporterStats) => Promise<unknown>;
 }
 
 export interface StepStats {
   timeStart: number;
   timeEnd: number;
   duration: number;
+}
+
+export interface AssetStats {
+  name: string;
+  size: number;
 }
 
 export type Step = 'build' | 'optimize' | 'emit';
@@ -23,4 +27,5 @@ export interface BuildTimeReporterStats {
   initialResource?: string;
   rebuild: boolean;
   nodeEnv: string;
+  assets: AssetStats[];
 }

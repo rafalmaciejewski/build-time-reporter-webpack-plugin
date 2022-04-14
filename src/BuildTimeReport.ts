@@ -1,11 +1,11 @@
 import webpack from 'webpack';
-import { BuildTimeReporterStats, Step, StepStats } from './types';
+import { AssetStats, BuildTimeReporterStats, Step, StepStats } from './types';
 
 export class BuildTimeReport {
   private readonly steps = new Map<Step, { timeStart: number; timeEnd: number }>();
   private timeStart = 0;
   private timeEnd = 0;
-  private assets: string[] = [];
+  private assets: AssetStats[] = [];
   private chunks: string[] = [];
   private modules: string[] = [];
   private hash?: string;
@@ -41,7 +41,10 @@ export class BuildTimeReport {
     this.assets = [];
     Object.entries(assets).forEach(([assetName, asset]) => {
       if (asset.emitted) {
-        this.assets.push(assetName);
+        this.assets.push({
+          name: assetName,
+          size: asset.info.size!,
+        });
       }
     });
   }
@@ -73,6 +76,7 @@ export class BuildTimeReport {
       initialResource: this.initialResource,
       rebuild: this.rebuild,
       nodeEnv: process.env.NODE_ENV as string,
+      assets: this.assets,
     };
   }
 
