@@ -1,3 +1,10 @@
+## [1.4.3](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.4.2...v1.4.3) (2022-04-14)
+
+
+### Bug Fixes
+
+* fix module exports ([f049982](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/commit/f0499826e0d82b91a74ed97065358d6a4fbf9eaf))
+
 ## [1.4.2](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.4.1...v1.4.2) (2022-04-14)
 
 
