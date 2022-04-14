@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.3.0...v1.4.0) (2022-04-14)
+
+
+### Features
+
+* add asset size info to generated report ([0f57834](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/commit/0f57834a2008f76c05257325321b52de8ff62bb2))
+
 # [1.3.0](https://github.com/rafalmaciejewski/build-time-reporter-webpack-plugin/compare/v1.2.0...v1.3.0) (2020-04-28)
 
 
