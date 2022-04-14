@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['eslint-config-getresponse-base', 'prettier', 'prettier/@typescript-eslint'],
+  extends: ['getresponse-base', 'prettier'],
 };
