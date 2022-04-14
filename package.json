@@ -1,6 +1,6 @@
 {
   "name": "build-time-reporter-webpack-plugin",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Webpack plugin for build time reporting",
   "keywords": [
     "build time",
